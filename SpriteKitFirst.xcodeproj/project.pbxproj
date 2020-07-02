@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C282B3F24ACC8BA00417B41 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C282B3E24ACC8BA00417B41 /* WebKit.framework */; };
+		0C282B4124ACC8C900417B41 /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C282B4024ACC8C900417B41 /* WebController.swift */; };
+		0C282B4524AD030500417B41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C282B4424AD030500417B41 /* SceneDelegate.swift */; };
 		0CE7ACCA24AA2C4F0082B090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE7ACC924AA2C4F0082B090 /* AppDelegate.swift */; };
 		0CE7ACCC24AA2C4F0082B090 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0CE7ACCB24AA2C4F0082B090 /* GameScene.sks */; };
 		0CE7ACCE24AA2C4F0082B090 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0CE7ACCD24AA2C4F0082B090 /* Actions.sks */; };
@@ -15,9 +18,13 @@
 		0CE7ACD524AA2C4F0082B090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CE7ACD324AA2C4F0082B090 /* Main.storyboard */; };
 		0CE7ACD724AA2C520082B090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CE7ACD624AA2C520082B090 /* Assets.xcassets */; };
 		0CE7ACDA24AA2C520082B090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CE7ACD824AA2C520082B090 /* LaunchScreen.storyboard */; };
+		5EAC951BD467C3EFFCD53BCD /* Pods_SpriteKitFirst.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EABA0B26CABB55B4FE4332 /* Pods_SpriteKitFirst.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C282B3E24ACC8BA00417B41 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		0C282B4024ACC8C900417B41 /* WebController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebController.swift; sourceTree = "<group>"; };
+		0C282B4424AD030500417B41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0CE7ACC624AA2C4F0082B090 /* SpriteKitFirst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteKitFirst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE7ACC924AA2C4F0082B090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CE7ACCB24AA2C4F0082B090 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -28,6 +35,9 @@
 		0CE7ACD624AA2C520082B090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CE7ACD924AA2C520082B090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CE7ACDB24AA2C520082B090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13EABA0B26CABB55B4FE4332 /* Pods_SpriteKitFirst.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKitFirst.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32773487B392DBB01997F35F /* Pods-SpriteKitFirst.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitFirst.debug.xcconfig"; path = "Target Support Files/Pods-SpriteKitFirst/Pods-SpriteKitFirst.debug.xcconfig"; sourceTree = "<group>"; };
+		8CEB66B5B7A78092E1C30C2F /* Pods-SpriteKitFirst.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitFirst.release.xcconfig"; path = "Target Support Files/Pods-SpriteKitFirst/Pods-SpriteKitFirst.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +45,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C282B3F24ACC8BA00417B41 /* WebKit.framework in Frameworks */,
+				5EAC951BD467C3EFFCD53BCD /* Pods_SpriteKitFirst.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C282B3D24ACC8BA00417B41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C282B3E24ACC8BA00417B41 /* WebKit.framework */,
+				13EABA0B26CABB55B4FE4332 /* Pods_SpriteKitFirst.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0CE7ACBD24AA2C4F0082B090 = {
 			isa = PBXGroup;
 			children = (
 				0CE7ACC824AA2C4F0082B090 /* SpriteKitFirst */,
 				0CE7ACC724AA2C4F0082B090 /* Products */,
+				0C282B3D24ACC8BA00417B41 /* Frameworks */,
+				877BE68224C0EDA13735E0F8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,16 +84,27 @@
 			isa = PBXGroup;
 			children = (
 				0CE7ACC924AA2C4F0082B090 /* AppDelegate.swift */,
+				0C282B4424AD030500417B41 /* SceneDelegate.swift */,
 				0CE7ACCB24AA2C4F0082B090 /* GameScene.sks */,
 				0CE7ACCD24AA2C4F0082B090 /* Actions.sks */,
 				0CE7ACCF24AA2C4F0082B090 /* GameScene.swift */,
 				0CE7ACD124AA2C4F0082B090 /* GameViewController.swift */,
+				0C282B4024ACC8C900417B41 /* WebController.swift */,
 				0CE7ACD324AA2C4F0082B090 /* Main.storyboard */,
 				0CE7ACD624AA2C520082B090 /* Assets.xcassets */,
 				0CE7ACD824AA2C520082B090 /* LaunchScreen.storyboard */,
 				0CE7ACDB24AA2C520082B090 /* Info.plist */,
 			);
 			path = SpriteKitFirst;
+			sourceTree = "<group>";
+		};
+		877BE68224C0EDA13735E0F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32773487B392DBB01997F35F /* Pods-SpriteKitFirst.debug.xcconfig */,
+				8CEB66B5B7A78092E1C30C2F /* Pods-SpriteKitFirst.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CE7ACDE24AA2C520082B090 /* Build configuration list for PBXNativeTarget "SpriteKitFirst" */;
 			buildPhases = (
+				F6766301A106E4F6CCA62286 /* [CP] Check Pods Manifest.lock */,
 				0CE7ACC224AA2C4F0082B090 /* Sources */,
 				0CE7ACC324AA2C4F0082B090 /* Frameworks */,
 				0CE7ACC424AA2C4F0082B090 /* Resources */,
+				EDA3276BB4014BCDADE2D73F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,14 +177,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EDA3276BB4014BCDADE2D73F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpriteKitFirst/Pods-SpriteKitFirst-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpriteKitFirst/Pods-SpriteKitFirst-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpriteKitFirst/Pods-SpriteKitFirst-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6766301A106E4F6CCA62286 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpriteKitFirst-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0CE7ACC224AA2C4F0082B090 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C282B4124ACC8C900417B41 /* WebController.swift in Sources */,
 				0CE7ACD024AA2C4F0082B090 /* GameScene.swift in Sources */,
 				0CE7ACD224AA2C4F0082B090 /* GameViewController.swift in Sources */,
 				0CE7ACCA24AA2C4F0082B090 /* AppDelegate.swift in Sources */,
+				0C282B4524AD030500417B41 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +370,7 @@
 		};
 		0CE7ACDF24AA2C520082B090 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32773487B392DBB01997F35F /* Pods-SpriteKitFirst.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,6 +389,7 @@
 		};
 		0CE7ACE024AA2C520082B090 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CEB66B5B7A78092E1C30C2F /* Pods-SpriteKitFirst.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
